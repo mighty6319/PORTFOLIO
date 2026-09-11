@@ -39,14 +39,6 @@ h1{
     transform: scale(0.8);
     background-color: rgba(99, 124, 101, 0.995);
 }
-.skill-table:hover{
-
-    background-color: blueviolet;
-}
-.js:hover{
-    background-color: gold;
-    border: 2px solid white;
-}
 
 .completed{
     
@@ -139,8 +131,7 @@ h1{
     background: #28704f;
 }
 .portfolio-page .skill-table .js:hover {
-    background: #fff1d9;
-    border: 0;
+    border:1.5px solid rgba(49, 117, 52, 0.995);
 }
 .portfolio-page article {
     border-left: 4px solid #d06b3c;
@@ -151,6 +142,36 @@ h1{
 .portfolio-page main a {
     color: #17634a;
     font-weight: bold;
+}
+.portfolio-page .hackathon-project li {
+    padding: 10px 0;
+}
+.portfolio-page .hackathon-project a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid #c9ddd2;
+    border-radius: 8px;
+    background: #f5f8f6;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.portfolio-page .hackathon-project a::after {
+    content: "↗";
+    color: #d06b3c;
+    transition: transform 0.2s ease;
+}
+.portfolio-page .hackathon-project a:hover,
+.portfolio-page .hackathon-project a:focus-visible {
+    color: #d06b3c;
+    outline: none;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(34, 73, 56, 0.12);
+}
+.portfolio-page .hackathon-project a:hover::after,
+.portfolio-page .hackathon-project a:focus-visible::after {
+    transform: translate(3px, -3px);
 }
 .portfolio-page footer,
 .contact-page footer {
