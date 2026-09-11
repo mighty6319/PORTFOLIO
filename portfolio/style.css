@@ -5,7 +5,7 @@ h1{
     display: flex;
     justify-content: center;
     height: 40px;
-    
+    gap: 4px;
 }
 .card{
     border-radius: 9px;
@@ -15,14 +15,14 @@ h1{
     background-color: rgba(49, 117, 52, 0.995);
     display: flex;
     flex-grow:1;
+    flex-basis: 0;
     color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 .card:hover{
-    flex-grow: 5;
+    flex-grow: 1.25;
     align-self: stretch;
-    
 }
 .card:active{
     
@@ -44,4 +44,208 @@ h1{
 }
 .planned{
     background-image: linear-gradient(to right, rgb(239, 218, 79), rgb(231, 101, 50));
+}
+
+.portfolio-page {
+    min-height: 100vh;
+    margin: 0;
+    color: #17324d;
+    background-color: #f5f8f6;
+    background-image: radial-gradient(#b7cec1 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+.portfolio-page header,
+.portfolio-page main,
+.portfolio-page footer {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.portfolio-page h1 {
+    padding-top: 24px;
+    color: #174b3a;
+    letter-spacing: 2px;
+}
+.portfolio-page h2,
+.portfolio-page h3,
+.portfolio-page h4 {
+    color: #28704f;
+}
+.portfolio-page main > section,
+.portfolio-page main > article,
+.portfolio-page main > img {
+    box-sizing: border-box;
+    margin: 26px 0;
+    padding: 24px 28px;
+    border: 1px solid #c9ddd2;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 10px 24px rgba(34, 73, 56, 0.08);
+}
+.portfolio-page .profile-intro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: 210px;
+}
+.portfolio-page .profile-intro img {
+    flex: 0 0 175px;
+    width: 175px;
+    height: 250px;
+    padding: 0px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.portfolio-page .profile-intro .Intro {
+    flex: 1;
+    line-height: 1.8;
+}
+.portfolio-page .about-me {
+    text-align: center;
+}
+.portfolio-page .skill-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #b7cec1;
+}
+.portfolio-page .skill-table th,
+.portfolio-page .skill-table td {
+    padding: 12px;
+    text-align: left;
+}
+.portfolio-page .skill-table th {
+    color: white;
+    background: #28704f;
+}
+.portfolio-page .skill-table .js:hover {
+    background: #fff1d9;
+    border: 0;
+}
+.portfolio-page article {
+    border-left: 4px solid #d06b3c;
+}
+.portfolio-page article h4 {
+    margin-top: 0;
+}
+.portfolio-page main a {
+    color: #17634a;
+    font-weight: bold;
+}
+.portfolio-page footer,
+.contact-page footer {
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .portfolio-page header,
+    .portfolio-page main,
+    .portfolio-page footer {
+        padding: 0 14px;
+    }
+    .portfolio-page main > section,
+    .portfolio-page main > article {
+        padding: 20px;
+    }
+    .portfolio-page .profile-intro {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+    .portfolio-page .profile-intro img {
+        align-self: center;
+    }
+    #navbar {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .card {
+        min-height: 38px;
+    }
+}
+
+.contact-page {
+    min-height: 100vh;
+    margin: 0;
+    color: #17324d;
+    background-color: #f5f8f6;
+    background-image: radial-gradient(#b7cec1 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+.contact-page header,
+.contact-page main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.contact-page h1 {
+    padding-top: 24px;
+    color: #174b3a;
+    letter-spacing: 2px;
+}
+.contact-page .contact-info,
+.contact-page .social-info {
+    margin: 28px 0;
+    padding: 24px 28px;
+    border: 1px solid #c9ddd2;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 10px 24px rgba(34, 73, 56, 0.08);
+}
+.contact-page .contact-info h3,
+.contact-page .social-info h4 {
+    margin-top: 0;
+    color: #28704f;
+}
+.contact-page .contact-info p {
+    line-height: 2;
+}
+.contact-page .contact-label {
+    display: inline-block;
+    min-width: 110px;
+    color: #174b3a;
+}
+.contact-page .contact-label::before,
+.contact-page .social-link::before {
+    display: inline-block;
+    width: 25px;
+    margin-right: 6px;
+    color: #d06b3c;
+    font-size: 1.05em;
+}
+.contact-page #name::before { content: "●"; }
+.contact-page #contact-no::before { content: "☎"; }
+.contact-page #email::before { content: "✉"; }
+.contact-page #address::before { content: "⌖"; }
+.contact-page address {
+    margin: 4px 0 0 141px;
+    line-height: 1.6;
+}
+.contact-page .social-link {
+    display: inline-block;
+    margin: 7px 0;
+    color: #17634a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.contact-page .social-link::before { content: "↗"; }
+.contact-page .social-link:hover {
+    color: #d06b3c;
+    transform: translateX(4px);
+}
+
+@media (max-width: 520px) {
+    .contact-page header,
+    .contact-page main {
+        padding: 0 14px;
+    }
+    .contact-page .contact-info,
+    .contact-page .social-info {
+        padding: 20px;
+    }
+    .contact-page address {
+        margin-left: 0;
+    }
 }
