@@ -1,13 +1,17 @@
 # Ayush Saw Portfolio
 
-This is my personal learning portfolio. It presents my background, skills,
-projects, and contact information while I continue learning web development,
-AI, and full-stack development.
+This is my personal portfolio and learning website. I will update it
+periodically as I improve my skills, complete projects, and continue learning
+AI, web development, and full-stack development.
 
-## Pages
+## Live Website
 
-- **Home** - Introduction, featured projects, and tools
-- **About** - Profile, education, career goal, skills, and learning roadmap
+[Open Ayush Saw Portfolio](https://portfolio-zeta-silk-347sytapai.vercel.app/)
+
+## What You Can Find Here
+
+- **Home** - A short introduction, featured projects, and tools
+- **About** - My profile, education, skills, goals, and learning roadmap
 - **Projects** - Completed and planned projects
 - **Contact** - Contact information and social links
 
@@ -15,26 +19,29 @@ AI, and full-stack development.
 
 - HTML5
 - CSS3
+- Vercel for deployment
+
+## Run Locally
+
+1. Open the `portfolio` folder.
+2. Open `index.html` in a browser.
+
+For a better development experience, open the project in VS Code and use the
+**Live Server** extension.
 
 ## Project Structure
 
 ```text
-portfolio/
-├── index.html
-├── about.html
-├── projects.html
-├── contact.html
-└── style.css
+PORTFOLIO/
+├── assets/
+│   └── profile.jpeg
+└── portfolio/
+	├── index.html
+	├── about.html
+	├── projects.html
+	├── contact.html
+	└── style.css
 ```
-
-## Run Locally
-
-1. Download or clone this repository.
-2. Open the `portfolio` folder.
-3. Open `index.html` in a web browser.
-
-You can also open the project in VS Code and use the **Live Server** extension
-for automatic browser refresh while editing.
 
 ## Author
 
