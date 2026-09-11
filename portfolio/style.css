@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    
+}
+.card{
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(252, 252, 253);
+    background-color: rgba(49, 117, 52, 0.995);
+    display: flex;
+    flex-grow:1;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    flex-grow: 5;
+    align-self: stretch;
+    
+}
+.card:active{
+    
+    transform: scale(0.8);
+    background-color: rgba(99, 124, 101, 0.995);
+}
+.skill-table:hover{
+
+    background-color: blueviolet;
+}
+.js:hover{
+    background-color: gold;
+    border: 2px solid white;
+}
+
+.completed{
+    
+    background-image: linear-gradient(to right, rgb(140, 194, 140), rgb(18, 105, 155));
+}
+.planned{
+    background-image: linear-gradient(to right, rgb(239, 218, 79), rgb(231, 101, 50));
+}
