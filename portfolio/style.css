@@ -20,9 +20,19 @@ h1{
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
+.nav-icon {
+    margin-right: 6px;
+    font-size: 1.05em;
+    line-height: 1;
+}
+.card.active {
+    background-color: #d06b3c;
+    box-shadow: 0 4px 12px rgba(208, 107, 60, 0.2);
+}
 .card:hover{
-    flex-grow: 1.25;
+    flex-grow: 1.12;
     align-self: stretch;
+    filter: brightness(1.08);
 }
 .card:active{
     
@@ -65,6 +75,16 @@ h1{
     padding-top: 24px;
     color: #174b3a;
     letter-spacing: 2px;
+}
+.portfolio-page h1::after,
+.contact-page h1::after {
+    display: block;
+    width: 52px;
+    height: 4px;
+    margin: 12px auto 0;
+    border-radius: 4px;
+    background: #d06b3c;
+    content: "";
 }
 .portfolio-page h2,
 .portfolio-page h3,
